@@ -1,9 +1,9 @@
 import NavBar from '@/components/NavBar/NavBar';
 
-export default function Home() {
+export default function about() {
   return (
     <div>
-      <h1>Home</h1>
+      <h1>About</h1>
     </div>
   );
 }
