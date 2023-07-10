@@ -1,18 +1,17 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from './NavBar.module.css';
 
 export default function NavBar() {
   const router = useRouter();
   return (
     <nav>
-      <img src="/vercel.svg" />
+      <img src={'/test/vercel.svg'} />
       <div>
         <Link href="/">
-          <a className={router.pathname === '/' ? 'active' : ''}>Home</a>
+          <p className={router.pathname === '/' ? 'active' : ''}>Home</p>
         </Link>
         <Link href="/about">
-          <a className={router.pathname === '/about' ? 'active' : ''}>About</a>
+          <p className={router.pathname === '/about' ? 'active' : ''}>About</p>
         </Link>
       </div>
       <style jsx>{`

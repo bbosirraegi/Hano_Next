@@ -1,11 +1,15 @@
-import Layout from '@/components/Layout';
+import mainLayout from '@/Layout/MainLayout/mainLayout';
+import categoryLayout from '@/Layout/CategoryLayout/categoryLayout';
 import NavBar from '@/components/NavBar/NavBar';
 
 export default function App({ Component, pageProps }) {
-  return (
-    <Layout>
+  return 1 === 2 ? (
+    <mainLayout>
       <Component {...pageProps} />
-      <h1>Test</h1>
-    </Layout>
+    </mainLayout>
+  ) : (
+    <categoryLayout>
+      <Component {...pageProps} />
+    </categoryLayout>
   );
 }
