@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Seo from '../components/Seo';
+import NavBar from '@/components/NavBar/NavBar';
 
 const API_KEY = '2cec34502911c4f655c764f7e9219b0b';
 
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <div>
       <Seo title="Home" />
+      <NavBar />
       {!movies && <h4>Loading...</h4>}
       {movies?.map((movie) => (
         <div key={movie.id}>

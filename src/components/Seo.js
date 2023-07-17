@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import NavBar from './NavBar/NavBar';
 
 export default function Seo({ title = 'Hano' } = props) {
   return (
