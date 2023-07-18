@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Seo from '../components/Seo';
 import NavBar from '@/components/NavBar/NavBar';
 
 export default function Home() {
@@ -12,12 +11,10 @@ export default function Home() {
   }, []);
   return (
     <div className="container">
-      <Seo title="Home" />
-      <NavBar />
       {!movies && <h4>Loading...</h4>}
       {movies?.map((movie) => (
         <div className="movie" key={movie.id}>
-          <img sre={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
+          <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} />
           <h4>{movie.original_title}</h4>
         </div>
       ))}

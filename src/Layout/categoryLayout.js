@@ -1,5 +1,5 @@
-import NavBar from '@/components/NavBar/NavBar';
-import Seo from '@/components/Seo';
+import NavBar from '../components/NavBar/NavBar';
+import Seo from '../components/Seo';
 
 export default function categoryLayout({ children }) {
   return (
